@@ -6,6 +6,7 @@ keywords：微信小程序、云开发、云数据库、todolist
 ## 使用
 * `git clone`
 * 使用微信开发着工具添加本项目
+![使用](https://picture-1259767542.cos.ap-guangzhou.myqcloud.com/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8.gif)
 ## 云开发
 - 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
 - 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
