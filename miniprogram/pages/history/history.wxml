@@ -1,0 +1,7 @@
+<view class="container">
+  <view wx:for="{{lists}}" wx:key="{{index}}" class="list-item" >
+    <image src="{{item.imageUrl}}"></image>
+    <text>{{item.content}}</text>
+  </view>
+  <view hidden="{{lists.length > 0}}" class="noData">查询数据为空</view>
+</view>

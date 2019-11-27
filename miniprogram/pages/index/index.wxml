@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="user">
+    <image src="{{avatarUrl}}" wx:if="{{avatarUrl}}"/>
+    <text wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</text>
+    <button open-type="getUserInfo" class="infoButton" bindgetuserinfo="getInfo" wx:if="{{avatarUrl === '../../images/icon/user-unlogin.png'}}">获取授权</button>
+  </view>
+  <view class="add">
+    <view class="add-input">
+      <image src="../../images/icon/add.png" />
+      <input placeholder="快速添加" bindinput="inputContent" value="{{content}}"/>
+    </view>
+    <view class="button" catchtap="addItem">添加代办</view>
+  </view>
+  <view class="lists" hidden="{{(lists.length > 0) ? false : true}}" > <!--  isChecked="{{(item.status === 1) ? true : false}}"  -->
+    <item item="{{item}}" wx:for="{{lists}}" key="{{item._id}}" bind:myevent="remove" wx:key="{{index}}" bind:changeStatus="changeItem" ></item>
+  </view>
+  <view class="footer-content">
+      <view catchtap="show" data-situation="1" class="{{(chooseItem === 'completed') ? 'add-border-choose' : 'add-border-nochoose'}}">已完成</view>
+      <view catchtap="show" data-situation="0" class="{{(chooseItem === 'Nocompleted') ? 'add-border-choose' : 'add-border-nochoose'}}">未完成</view>
+      <view catchtap="clearCompleted">清空已完成</view>
+      <view catchtap="clearAll">清空所有记录</view>
+  </view>
+  <view hidden="{{(contentLists.length > 0) ? true : false}}" class="no-content">{{(chooseItem === '') ? '无查询' : '查询数据为空'}}</view>
+  <view class="justShowContent" hidden="{{(contentLists.length > 0) ? false : true}}">
+    <view wx:for="{{contentLists}}" class="content-lists" wx:key="{{index}}">
+      <view class="content">
+        <view class="number">{{index + 1}}.</view>
+        <view>{{item.content}}</view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+</view>
+

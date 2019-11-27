@@ -1,0 +1,5 @@
+<view class="list">
+      <radio checked="{{item.status === 1}}" value="comp" color="#A79BF7" bindtap="radioChange"/>
+      <text >{{item.content}}</text>
+      <image src="../../images/icon/cha.png" catchtap="remove"/>
+</view>

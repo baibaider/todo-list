@@ -1,0 +1,99 @@
+/**index.wxss**/
+
+.infoButton{
+  width: 120rpx;
+  height: 80rpx;
+  padding: 0;
+  font-size: 30rpx;
+}
+.user{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.user image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+}
+
+.add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add .button{
+  height: 45rpx;
+  width: 160rpx;
+  font-size: 30rpx;
+  color: #A79BF7;
+  text-align: center;
+}
+.add-input{
+  display: flex;
+  width: 540rpx;
+  height: 60rpx;
+  border: 2rpx #ccc solid;
+  box-shadow: 5rpx 5rpx 5rpx 0 rgba(0, 0, 0, .05);
+}
+.add-input image{
+  margin-top: 4rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.add-input input{
+  margin-top: 8rpx;
+  width: 100%;
+}
+
+.lists{
+  margin-top: 30rpx;
+  padding: 30rpx;
+  border: 2rpx #ccc solid;
+  box-shadow: 5rpx 5rpx 5rpx 0 rgba(0, 0, 0, .05);
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #000000;
+}
+.footer-content view{
+  padding: 6rpx;
+  box-sizing: content-box;
+
+}
+.add-border-choose{
+  border: 2rpx #A79BF7 solid;
+  border-radius: 10%;
+}
+.add-border-nochoose{
+  border: 2rpx #ffffff solid;
+  border-radius: 10%;
+}
+
+.justShowContent{
+  padding: 30rpx;
+}
+.no-content{
+  padding: 30rpx;
+  color: #cccccc;
+  text-align: center;
+}
+.content-lists .content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content-lists .number{
+  margin-right: 20rpx;
+}
+.content-lists .line{
+  width: 99%;
+  border-bottom: 2rpx #999 solid;
+}
+

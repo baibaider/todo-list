@@ -1,0 +1,20 @@
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30rpx;
+}
+.list radio{
+  
+  width: 30rpx;
+  height: 30rpx;
+}
+.list text{
+  display: inline-block;
+  margin-left: 36rpx;
+  width: 520rpx;
+}
+.list image{
+  width: 40rpx;
+  height: 40rpx;
+}
